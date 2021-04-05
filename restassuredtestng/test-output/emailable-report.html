@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">restassuredtestcases</th></tr>
+<tr><td><a href="#t0">testemployeeAPIs</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">10</td><td class="num">22,620</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">restassuredtestcases</th></tr></tbody><tbody id="t0"><tr><th colspan="4">testemployeeAPIs &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.test.scripts.GetSingleEmployeeData</td><td><a href="#m0">checkContentType</a></td><td rowspan="1">1617553373119</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m1">checkResponseBody</a></td><td rowspan="1">1617553373123</td><td rowspan="1">11</td></tr><tr class="failedeven"><td><a href="#m2">checkStatusCode</a></td><td rowspan="1">1617553373140</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m3">checkStatusLine</a></td><td rowspan="1">1617553373145</td><td rowspan="1">4</td></tr><tr class="failedodd"><td rowspan="3">com.test.scripts.PostCreateNewUser</td><td><a href="#m4">checkResponseBody</a></td><td rowspan="1">1617553377424</td><td rowspan="1">3</td></tr><tr class="failedodd"><td><a href="#m5">checkStatusCode</a></td><td rowspan="1">1617553377429</td><td rowspan="1">3</td></tr><tr class="failedodd"><td><a href="#m6">checkStatusLine</a></td><td rowspan="1">1617553377434</td><td rowspan="1">1</td></tr><tr class="failedeven"><td rowspan="3">com.test.scripts.PutUpdateExisitingUser</td><td><a href="#m7">checkResponseBody</a></td><td rowspan="1">1617553378926</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m8">checkStatusCode</a></td><td rowspan="1">1617553378929</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m9">checkStatusLine</a></td><td rowspan="1">1617553378931</td><td rowspan="1">1</td></tr><tr><th colspan="4">testemployeeAPIs &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.test.scripts.DeleteEmployee</td><td><a href="#m10">checkResponseBody</a></td><td rowspan="1">1617553383211</td><td rowspan="1">16</td></tr><tr class="passedeven"><td><a href="#m11">checkStatusCode</a></td><td rowspan="1">1617553383230</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m12">checkStatusLine</a></td><td rowspan="1">1617553383240</td><td rowspan="1">5</td></tr><tr class="passedodd"><td rowspan="9">com.test.scripts.GetAllEmployees</td><td><a href="#m13">checkContentEncoding</a></td><td rowspan="1">1617553368598</td><td rowspan="1">10</td></tr><tr class="passedodd"><td><a href="#m14">checkContentLength</a></td><td rowspan="1">1617553368611</td><td rowspan="1">2</td></tr><tr class="passedodd"><td><a href="#m15">checkContentType</a></td><td rowspan="1">1617553368615</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m16">checkResponseBody</a></td><td rowspan="1">1617553368617</td><td rowspan="1">31</td></tr><tr class="passedodd"><td><a href="#m17">checkResponseTime</a></td><td rowspan="1">1617553368650</td><td rowspan="1">5</td></tr><tr class="passedodd"><td><a href="#m18">checkServerType</a></td><td rowspan="1">1617553368661</td><td rowspan="1">6</td></tr><tr class="passedodd"><td><a href="#m19">checkStatusCode</a></td><td rowspan="1">1617553368672</td><td rowspan="1">5</td></tr><tr class="passedodd"><td><a href="#m20">checkStatusLine</a></td><td rowspan="1">1617553368682</td><td rowspan="1">2</td></tr><tr class="passedodd"><td><a href="#m21">verifyCookies</a></td><td rowspan="1">1617553368691</td><td rowspan="1">4</td></tr><tr class="passedeven"><td rowspan="1">com.test.scripts.GetSingleEmployeeData</td><td><a href="#m22">checkServerType</a></td><td rowspan="1">1617553373136</td><td rowspan="1">3</td></tr></tbody>
+</table>
+<h2>testemployeeAPIs</h2><h3 id="m0">com.test.scripts.GetSingleEmployeeData#checkContentType</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [application/json] but found [text/html; charset=UTF-8]
+	at com.test.scripts.GetSingleEmployeeData.checkContentType(GetSingleEmployeeData.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.test.scripts.GetSingleEmployeeData#checkResponseBody</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.test.scripts.GetSingleEmployeeData.checkResponseBody(GetSingleEmployeeData.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.test.scripts.GetSingleEmployeeData#checkStatusCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [429]
+	at com.test.scripts.GetSingleEmployeeData.checkStatusCode(GetSingleEmployeeData.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.test.scripts.GetSingleEmployeeData#checkStatusLine</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at com.test.scripts.GetSingleEmployeeData.checkStatusLine(GetSingleEmployeeData.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.test.scripts.PostCreateNewUser#checkResponseBody</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.test.scripts.PostCreateNewUser.checkResponseBody(PostCreateNewUser.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.test.scripts.PostCreateNewUser#checkStatusCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [429]
+	at com.test.scripts.PostCreateNewUser.checkStatusCode(PostCreateNewUser.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.test.scripts.PostCreateNewUser#checkStatusLine</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at com.test.scripts.PostCreateNewUser.checkStatusLine(PostCreateNewUser.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.test.scripts.PutUpdateExisitingUser#checkResponseBody</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.test.scripts.PutUpdateExisitingUser.checkResponseBody(PutUpdateExisitingUser.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.test.scripts.PutUpdateExisitingUser#checkStatusCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [429]
+	at com.test.scripts.PutUpdateExisitingUser.checkStatusCode(PutUpdateExisitingUser.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.test.scripts.PutUpdateExisitingUser#checkStatusLine</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at com.test.scripts.PutUpdateExisitingUser.checkStatusLine(PutUpdateExisitingUser.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.test.scripts.DeleteEmployee#checkResponseBody</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.test.scripts.DeleteEmployee#checkStatusCode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.test.scripts.DeleteEmployee#checkStatusLine</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.test.scripts.GetAllEmployees#checkContentEncoding</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.test.scripts.GetAllEmployees#checkContentLength</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.test.scripts.GetAllEmployees#checkContentType</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.test.scripts.GetAllEmployees#checkResponseBody</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.test.scripts.GetAllEmployees#checkResponseTime</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.test.scripts.GetAllEmployees#checkServerType</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.test.scripts.GetAllEmployees#checkStatusCode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.test.scripts.GetAllEmployees#checkStatusLine</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.test.scripts.GetAllEmployees#verifyCookies</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.test.scripts.GetSingleEmployeeData#checkServerType</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
